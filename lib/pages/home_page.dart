@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Homepage extends StatefulWidget {
-  Homepage({super.key});
+  const Homepage({super.key});
 
   @override
   State<Homepage> createState() => _HomepageState();
@@ -20,8 +20,7 @@ class _HomepageState extends State<Homepage> {
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 24.0),
-            child: Icon(
-              Icons.person),
+            child: Icon(Icons.person),
           )
         ],
       ),
@@ -29,8 +28,7 @@ class _HomepageState extends State<Homepage> {
         children: [
           //1.Texto principal
           Padding(
-            padding: EdgeInsets.all(
-              24.0),
+            padding: EdgeInsets.symmetric(horizontal: 24.0),
             child: Row(
               children: [
                 Text(
